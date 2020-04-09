@@ -25,7 +25,7 @@ app.set('view engine', 'hbs');
 app.set('port', app.locals.config.siteConfig.port);
 
 // App Debugging
-app.use(logger('dev'));
+app.use(logger(':method :url :status :res[content-length] - :response-time ms'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
