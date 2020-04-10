@@ -21,6 +21,7 @@ else {
 
 // App Settings
 app.set('views', path.join(__dirname, 'views'));
+
 app.set('view engine', 'hbs');
 app.set('port', app.locals.config.siteConfig.port);
 
